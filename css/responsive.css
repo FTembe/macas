@@ -1,0 +1,47 @@
+@media(max-width:768px){
+	.default-wrappper{
+		margin: 0 1rem;
+	}
+	header{
+		position: relative;
+	}
+	header.navbar
+	{
+		padding: .6rem 1rem;
+		justify-content: center;
+	}
+	header.navbar nav ul  {
+		text-align: center;
+
+	}
+	.w50,
+	.w40,
+	.w60{
+		width: 100%;
+	}
+	.text-warning{
+		color: yellow !important;
+		font-size: 1rem !important;
+	}
+	/*Main*/
+
+	.text h3{
+		font-size: 1.3rem;
+	}
+	.text p{
+		font-size: 1rem;
+	}
+	.d-flex{
+		flex-direction: column;
+	}
+
+	.small-gallery{
+		width: 100%;
+	}
+	.gallery{
+		margin-top: 2rem;
+	}
+	.small-gallery:last-child{
+			margin-top: 1rem;
+	}
+}
