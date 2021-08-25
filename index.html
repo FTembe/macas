@@ -25,7 +25,7 @@
         </header>
 
         <section class="banner-wrapper"id="home">
-            <div class="banner" style="background-image: url(images/macasdu.jpg);background-position: center center;background-repeat: no-repeat;background-size: cover;">
+            <div class="banner" style="background: #000 url('images/macasdu.jpg');background-position: center center;background-repeat: no-repeat;background-size: cover;">
                 <h3>MacasDu</h3>
                 <p >Juntos fazemos Moçambique melhor <br>educando as crianças</p>
             </div>
@@ -53,22 +53,53 @@
                 </div>
             </div>
         </section>
+<style type="text/css">
+        #book,
+        #app
+        {
+            position: relative;
+            width: 100%;
+            height: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: #111;
+            overflow: hidden;
+        }
+        .section__img
+        {
+            position: relative;
+            width: 100%;
 
-        <section id="book" style="background-image: url(images/macaslivros.jpg);background-position: center center;background-repeat: no-repeat;background-size: cover; padding:6rem 2rem;">
-            <div class="text text-center">
-                <div class="headding ">
+           
+        }
+
+        #book img,
+        #app img
+        {
+            position: absolute;
+            width: 100%;
+             object-fit: cover;
+             height: 100%; 
+        }
+        .section__text
+        {
+            position: absolute;
+        }
+        .section__text p{
+            /*font-size:1.5rem ;*/
+        }
+    </style>
+      <section id="book">   
+        <img src="images/macaslivros.jpg">
+        <div class="section__text">
+            <div class="headding ">
                     <h2 class="text-white">Macas <span>Livro</span> </h2>
                 </div>
-                <p class="text-white">Um valioso presente para dar a sua criança <br>Uma forma clara de dizer SIM a educação</p>
-
-            </div>
-        </section>
-        <style type="text/css">
-
-
-
-        </style>
-        <!-- style="padding: 0 9rem; " -->
+            <p class="text-white">Um valioso presente para dar a sua criança <br>Uma forma clara de dizer SIM a educação</p>
+        </div>
+    </section>
         <section id="more-about-book" >
             <div class="default-wrappper">
                 <div class="d-flex d-flex__wrap d-flex__x_center d-flex__y_center">
@@ -87,17 +118,16 @@
         </section>
 
 
-        <section id="app" style="background-image: url(images/macasapps.jpg);background-position: center center;background-repeat: no-repeat;background-size:cover; padding:6rem 2rem;  ">
-            <div class="d-flex d-flex__wrap d-flex__x_center d-flex__y_center">
-                <div class="text text-center">
-                    <div class="headding">
-                        <h2 class="text-white">Macas <span>APP</span> </h2>
-                    </div>
-                    <p class="text-white">Tenha O Macas em sua Mãos</p>
-                    <p class="text-warning thin"><sup>*</sup>MacasDu pode aparecer grande ou pequeno no seu telefone
-                        Por favor reporte essas anomalias</p>
-                    <a href="#more-about-book"> <button  class="btn-read-more">Baixar</button></a>
+        <section id="app">
+            <img src="images/macasapps.jpg">
+            <div class="section__text text-center">
+                <div class="headding">
+                    <h2 class="text-white">Macas <span>APP</span> </h2>
                 </div>
+                <p class="text-white">Tenha O Macas em sua Mãos</p>
+                <p class="text-warning thin"><sup>*</sup>MacasDu pode aparecer grande ou pequeno no seu telefone
+                Por favor reporte essas anomalias</p>
+                <a href="#more-about-book"> <button  class="btn-read-more">Baixar</button></a>
             </div>
         </section>
 
